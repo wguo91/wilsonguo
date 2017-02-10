@@ -4,7 +4,8 @@
 @media only screen and (min-width: 480px) {
   .main-container .main-flex-grid,
   .projects-container .projects-flex-grid,
-  .resume-container .resume-flex-grid {
+  .resume-container .resume-flex-grid,
+  .error-container .error-flex-grid {
     section .flex-grid {
       display: flex;
       p {
@@ -21,7 +22,8 @@
 @media only screen and (min-width: 768px) {
   .main-container .main-flex-grid,
   .projects-container .projects-flex-grid,
-  .resume-container .resume-flex-grid {
+  .resume-container .resume-flex-grid,
+  .error-container .error-flex-grid {
     section {
       width: 70%;
       margin: 0 auto 1em;
@@ -42,7 +44,8 @@
 @media only screen and (min-width: 992px) {
   .main-container .main-flex-grid,
   .projects-container .projects-flex-grid,
-  .resume-container .resume-flex-grid {
+  .resume-container .resume-flex-grid,
+  .error-container .error-flex-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -75,7 +78,8 @@
     }
   }
   .projects-container .projects-flex-grid,
-  .resume-container .resume-flex-grid {
+  .resume-container .resume-flex-grid,
+  .error-container .error-flex-grid {
     section {
       width: 50%;
       margin: 0 1em 1em;

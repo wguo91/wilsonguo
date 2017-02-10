@@ -125,6 +125,18 @@ body {
   display: flex;
   flex-direction: column;
   background: #000000 url("../images/shanghai.jpg") no-repeat center center fixed; }
+  body h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+    text-align: center; }
+  body h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    text-align: center; }
   body h3 {
     text-transform: uppercase;
     font-weight: bold;
@@ -263,6 +275,23 @@ body {
   .resume-container .resume-flex-grid section:last-child {
     border-bottom: none; }
 
+.error-container {
+  flex: 1; }
+  .error-container .error-flex-grid {
+    margin-bottom: 1em; }
+    .error-container .error-flex-grid section {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 0.25em;
+      padding: 1em;
+      margin: 0 1em 1em;
+      overflow: hidden;
+      text-align: center; }
+      .error-container .error-flex-grid section p {
+        font-size: 0.75em;
+        text-align: left;
+        padding: 1em 0 0;
+        line-height: 1.25em; }
+
 /**************************
  * FOOTER
  **************************/
@@ -287,11 +316,13 @@ body {
 @media only screen and (min-width: 480px) {
   .main-container .main-flex-grid section .flex-grid,
   .projects-container .projects-flex-grid section .flex-grid,
-  .resume-container .resume-flex-grid section .flex-grid {
+  .resume-container .resume-flex-grid section .flex-grid,
+  .error-container .error-flex-grid section .flex-grid {
     display: flex; }
     .main-container .main-flex-grid section .flex-grid p,
     .projects-container .projects-flex-grid section .flex-grid p,
-    .resume-container .resume-flex-grid section .flex-grid p {
+    .resume-container .resume-flex-grid section .flex-grid p,
+    .error-container .error-flex-grid section .flex-grid p {
       font-size: 0.75em;
       padding: 0 1em;
       text-align: left; }
@@ -301,17 +332,20 @@ body {
 @media only screen and (min-width: 768px) {
   .main-container .main-flex-grid section,
   .projects-container .projects-flex-grid section,
-  .resume-container .resume-flex-grid section {
+  .resume-container .resume-flex-grid section,
+  .error-container .error-flex-grid section {
     width: 70%;
     margin: 0 auto 1em;
     padding: 1em; }
     .main-container .main-flex-grid section .flex-grid,
     .projects-container .projects-flex-grid section .flex-grid,
-    .resume-container .resume-flex-grid section .flex-grid {
+    .resume-container .resume-flex-grid section .flex-grid,
+    .error-container .error-flex-grid section .flex-grid {
       display: flex; }
   .main-container .main-flex-grid .other-icons,
   .projects-container .projects-flex-grid .other-icons,
-  .resume-container .resume-flex-grid .other-icons {
+  .resume-container .resume-flex-grid .other-icons,
+  .error-container .error-flex-grid .other-icons {
     justify-content: center; }
 
   body h4 {
@@ -320,26 +354,31 @@ body {
 @media only screen and (min-width: 992px) {
   .main-container .main-flex-grid,
   .projects-container .projects-flex-grid,
-  .resume-container .resume-flex-grid {
+  .resume-container .resume-flex-grid,
+  .error-container .error-flex-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
     .main-container .main-flex-grid section,
     .projects-container .projects-flex-grid section,
-    .resume-container .resume-flex-grid section {
+    .resume-container .resume-flex-grid section,
+    .error-container .error-flex-grid section {
       width: 60%;
       margin: 0 1em 1em; }
       .main-container .main-flex-grid section .flex-grid p,
       .projects-container .projects-flex-grid section .flex-grid p,
-      .resume-container .resume-flex-grid section .flex-grid p {
+      .resume-container .resume-flex-grid section .flex-grid p,
+      .error-container .error-flex-grid section .flex-grid p {
         font-size: 0.85em; }
       .main-container .main-flex-grid section .other-icons,
       .projects-container .projects-flex-grid section .other-icons,
-      .resume-container .resume-flex-grid section .other-icons {
+      .resume-container .resume-flex-grid section .other-icons,
+      .error-container .error-flex-grid section .other-icons {
         margin-top: 1em; }
         .main-container .main-flex-grid section .other-icons a img,
         .projects-container .projects-flex-grid section .other-icons a img,
-        .resume-container .resume-flex-grid section .other-icons a img {
+        .resume-container .resume-flex-grid section .other-icons a img,
+        .error-container .error-flex-grid section .other-icons a img {
           max-width: 100px; } }
 @media only screen and (min-width: 1200px) {
   .main-container .main-flex-grid section {
@@ -351,7 +390,8 @@ body {
         text-align: left; }
 
   .projects-container .projects-flex-grid section,
-  .resume-container .resume-flex-grid section {
+  .resume-container .resume-flex-grid section,
+  .error-container .error-flex-grid section {
     width: 50%;
     margin: 0 1em 1em; } }
 

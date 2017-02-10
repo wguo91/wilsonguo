@@ -29,4 +29,20 @@ app.use(express.static(path.join(__dirname, "public")));
 // set up routes
 app.use("/", routes);
 
+// custom 500 page
+app.use(function(req, res) {
+  res.status(404);
+  res.render("404", {
+    title: "404 Page Not Found"
+  });
+});
+
+// custom 500 page
+app.use(function(req, res) {
+  res.status(500);
+  res.render("500", {
+    title: "500 Internal Server Error"
+  });
+});
+
 app.listen(config.port);

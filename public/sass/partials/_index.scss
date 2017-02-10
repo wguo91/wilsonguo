@@ -11,6 +11,16 @@ body {
   display: flex;
   flex-direction: column;
   background: $black $image no-repeat center center fixed;
+  h1 {
+    @include transformWeightSize(uppercase, bold, $h1);
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+  h2 {
+    @include transformWeightSize(uppercase, bold, $h2);
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
   h3 {
     @include transformWeightSize(uppercase, bold, $h3);
     letter-spacing: 0.1em;
@@ -43,7 +53,7 @@ body {
   .main-flex-grid {
     margin-bottom: 1em;
     section {
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: $white-with-opacity;
       border-radius: 0.25em;
       padding: 1em;
       margin: 0 1em 1em;
