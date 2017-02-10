@@ -1,0 +1,28 @@
+/* colors */
+$black: #000000;
+$white: #FFFFFF;
+$gray: #383838;
+$dark-gray: #1C1C1C;
+$light-gray: #CCCCCC;
+$light-blue: #4061AD;
+$white-with-opacity: rgba(255, 255, 255, 0.9);
+
+/* font-related variables */
+$font-stack: "PT Sans", sans-serif;
+$h1: 3em;
+$h2: 2em;
+$h3: 1.75em;
+$h4: 1.5em;
+$h5: 1em;
+$p-small: 0.75em;
+$p-medium: 0.85em;
+$p-large: 1em;
+
+$image: url("../images/shanghai.jpg");
+
+/* mix-ins */
+@mixin transformWeightSize($transform, $weight, $size) {
+  text-transform: $transform;
+  font-weight: $weight;
+  font-size: $size;
+}

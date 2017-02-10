@@ -1,0 +1,69 @@
+/**************************
+ * GENERAL/MAIN
+ **************************/
+.resume-container {
+  .resume-flex-grid {
+    margin-bottom: 1em;
+    section {
+      background-color: $white-with-opacity;
+      border-radius: 0.25em;
+      padding: 0.75em;
+      margin: 0 1em 1em;
+      overflow: hidden;
+      span {
+        font-weight: bold;
+      }
+      .resume-entry {
+        margin: 1em 0;
+        ul {
+          padding: 0 0 0 1em;
+          list-style-type: disc;
+          list-style-position: outside;
+          li {
+            font-size: $p-small;
+            line-height: 1.25em;
+          }
+        }
+        h5 {
+          color: $black;
+          text-align: left;
+          margin-bottom: 0;
+          text-decoration: underline;
+        }
+        .section-title-center {
+          text-decoration: none;
+        }
+        small {
+          font-size: $p-small;
+        }
+        p {
+          font-size: $p-small;
+          text-align: left;
+          padding: 0;
+          line-height: 1.25em;
+        }
+        p.workplace {
+          font-size: $p-medium;
+        }
+        p.date {
+          font-style: italic;
+        }
+        .section-img {
+          min-width: 200px;
+          min-height: 200px;
+          max-width: 200px;
+          max-height: 200px;
+          border-radius: 0.5em;
+        }
+      }
+      .resume-entry:first-child {
+        h5, p {
+          text-align: center;
+        }
+      }
+    }
+    section:last-child {
+      border-bottom: none;
+    }
+  }
+}

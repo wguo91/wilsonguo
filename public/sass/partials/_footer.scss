@@ -1,0 +1,20 @@
+/**************************
+ * FOOTER
+ **************************/
+.footer-container {
+  footer {
+  	font-family: $font-stack;
+    text-align: center;
+    background: $dark-gray;
+    color: $light-gray;
+    padding: 1em;
+  }
+  footer p {
+    @include transformWeightSize(uppercase, bold, 0.75em);
+    color: $white;
+    letter-spacing: 0.1em;
+  }
+  small {
+  	font-size: 0.5em;
+  }
+}

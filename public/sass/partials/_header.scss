@@ -1,0 +1,83 @@
+/**************************
+ * HEADER
+ **************************/
+.header-container {
+  header {
+    background-color: $dark-gray;
+    padding: 0.75em 1.25em;
+    overflow: hidden;
+    a.open-nav {
+      @include transformWeightSize(uppercase, bold, 1em);
+      background-color: $gray;
+      color: $white;
+      float: right;
+      line-height: 2em;
+      padding: 0 1em;
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      border-radius: 0.1em;
+    }
+    a.open-nav:hover,
+    a.open-nav:focus {
+      color: $gray;
+      background-color: $light-gray;
+    }
+  }
+  #navigation-mobile ul,
+  #navigation-desktop ul {
+    list-style: none;
+    background: #1C1C1C;
+  }
+  #navigation-mobile,
+  #navigation-desktop {
+    ul li a {
+      color: $white;
+      border-bottom: 0.1em solid $gray;
+      display: none;
+      padding: 0.75em 1em;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    ul li a:hover,
+    ul li a:focus {
+      color: $dark-gray;
+      background: $light-gray;
+    }
+  }
+  #navigation-mobile {
+    ul li:first-child a {
+      border-top: 0.1em solid $gray;
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header-container {
+    a.open-nav {
+      display: none;
+    }
+  	#navigation-mobile {
+  		display: none;
+  	}
+    #navigation-desktop {
+      ul {
+        position: absolute;
+        top: 0;
+        right: 0;
+        li a {
+          display: inline-block;
+        }
+      }
+    }
+    #navigation-desktop li {
+      display: inline;
+    }
+    #navigation-desktop ul li a {
+  		display: block;
+      line-height: 84px;
+      padding: 0 1em;
+      float: left;
+      border: none;
+    }
+  }
+}

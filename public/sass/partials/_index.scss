@@ -1,0 +1,78 @@
+/**************************
+ * GENERAL/MAIN
+ **************************/
+html {
+  height: 100%;
+}
+body {
+  font-family: $font-stack;
+  height: 100%;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  background: $black $image no-repeat center center fixed;
+  h3 {
+    @include transformWeightSize(uppercase, bold, $h3);
+    letter-spacing: 0.1em;
+    color: $white;
+    text-align: center;
+    padding: 1em;
+  }
+  h4 {
+    @include transformWeightSize(uppercase, bold, $h4);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5em;
+  }
+  h5 {
+    @include transformWeightSize(uppercase, bold, $h5);
+    a {
+      color: $white;
+      text-decoration: none;
+      float: left;
+      letter-spacing: 0.2em;
+      line-height: 2em;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $light-blue;
+  }
+}
+.main-container {
+  flex: 1;
+  .main-flex-grid {
+    margin-bottom: 1em;
+    section {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 0.25em;
+      padding: 1em;
+      margin: 0 1em 1em;
+      overflow: hidden;
+      text-align: center;
+      p {
+        font-size: $p-small;
+        text-align: left;
+        padding: 1em;
+        line-height: 1.25em;
+      }
+      .section-img {
+        min-width: 200px;
+        min-height: 200px;
+        max-width: 200px;
+        max-height: 200px;
+        border-radius: 0.5em;
+      }
+      .other-icons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        a {
+          margin: 0.5em;
+          img {
+            max-width: 50px;
+          }
+        }
+      }
+    }
+  }
+}
